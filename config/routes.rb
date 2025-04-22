@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "home#index"
   resource :registration, only: [ :new, :create ]
   resource :session
   resources :passwords, param: :token
